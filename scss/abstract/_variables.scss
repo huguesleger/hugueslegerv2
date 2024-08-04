@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Gallient-Regular";
+  src: url("/fonts/Gallient-Regular.woff2") format("woff2"),
+    url("/fonts/Gallient-Regular.woff") format("woff");
+}
+
+$font_gallient: "Gallient-Regular", sans-serif;
+$font_poppins: "Poppins", sans-serif;
+$font_nunito: "Nunito Sans", sans-serif;
+
+$dark_grey: #171717;
+$light_grey: #888888;
+$ultralight_grey: #b6b6b6;
+
+$themes: (
+  "dark": (
+    primary: #171717,
+    secondary: #ffffff,
+    tertiary: #000000,
+    quaternary: #ffffff,
+  ),
+  "light": (
+    primary: #ffffff,
+    secondary: #171717,
+    tertiary: #ffffff,
+    quaternary: #000000,
+  ),
+);

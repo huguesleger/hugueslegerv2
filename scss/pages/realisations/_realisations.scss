@@ -1,0 +1,140 @@
+.page-realisations {
+  background-color: $dark_grey;
+}
+
+.realisations {
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  //overflow: hidden;
+  .realisations-img {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // width: 100%;
+    // height: 100%;
+    //flex-direction: column;
+    //height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    //opacity: 0;
+    //display: none;
+    .inner-img {
+      display: flex;
+      flex-direction: column;
+      //gap: 10rem;
+      margin-top: 10rem;
+      .thumbnail {
+        width: 62vw;
+        height: 35vw;
+        position: relative;
+        margin-bottom: 10rem;
+        //display: none;
+      }
+    }
+  }
+  .container-canvas {
+    z-index: 2;
+    .wrapper-canvas {
+      &.disabled-scroll {
+        pointer-events: none !important;
+      }
+    }
+  }
+  .wrap-works {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap-infos {
+    position: absolute;
+    width: 100%;
+    top: 115px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    pointer-events: none;
+    .info-work {
+      position: absolute;
+      text-transform: uppercase;
+      overflow: hidden;
+      opacity: 0;
+      //transition: opacity 0.3s ease-in-out;
+      width: 100%;
+      text-align: center;
+      &.active {
+        //opacity: 1;
+      }
+      .work-link {
+        font-size: 4rem;
+        font-family: $font_gallient;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        line-height: 1;
+      }
+    }
+  }
+  .wrap-number {
+    top: 120px;
+    right: 75px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    transform: rotate(90deg);
+    overflow: hidden;
+    position: absolute;
+    pointer-events: none;
+    .number-work {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .number {
+        font-size: 3rem;
+        width: 61px;
+        display: inline-block;
+        text-align: right;
+      }
+      .separate {
+        padding: 0 6px;
+      }
+    }
+  }
+  .wrap-progress {
+    pointer-events: none;
+    position: absolute;
+    bottom: -5px;
+    right: 25px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    .circle-text {
+      fill: #fff;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      transform-origin: 50% 50%;
+      animation: 10s linear infinite rotate;
+    }
+  }
+  .wrap-contact {
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    left: 65px;
+  }
+}
